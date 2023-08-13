@@ -15,24 +15,13 @@
   .navbar.active {
     @apply w-4/5 scale-100;
   }
-  .nav-item {
-    @apply font-medium hover:text-blue-30;
-  }
   .point-list-item {
     @apply mb-3 inline-flex w-screen items-center justify-start rounded-full bg-red-30 text-l font-medium md:w-full md:bg-white;
   }
   .item-num {
     @apply mr-3 rounded-full bg-red-50 px-6 py-2 font-medium text-white;
   }
-  .navbar-toggle-icon {
-    display: block;
-    width: 1.5rem;
-    cursor: pointer;
-  }
-  .navbar-toggle-icon:where(:hover, :active) {
-    outline: 2px dotted theme(colors.red.50);
-    outline-offset: 4px;
-  }
+
   .backdrop {
     @apply fixed inset-0 z-10 hidden h-screen w-full bg-blue-90/50 backdrop-blur-sm;
   }
