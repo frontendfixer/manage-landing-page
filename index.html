@@ -27,7 +27,7 @@
         alt=""
         aria-hidden="true"
       />
-      <div class="backdrop"></div>
+      <div class="backdrop" id="backdrop"></div>
       <!-- Header -->
       <header
         class="container relative flex items-center justify-between px-6 py-8 sm:px-4"
@@ -39,20 +39,22 @@
         </a>
 
         <!-- Header Navbar -->
-        <nav class="navbar | flex items-center justify-between gap-4">
-          <!-- <div class="ml-auto mr-gutter-xl block md:hidden">
+        <nav
+          id="header-navbar"
+          class="absolute right-0 top-[4vw] z-[99] mx-auto flex origin-top-right scale-0 flex-col items-center justify-between gap-4 rounded-lg bg-gray-30 py-gutter-l shadow-lg transition-all delay-[250] ease-out md:relative md:top-0 md:mx-0 md:scale-100 md:flex-row md:bg-gray-30/0 md:p-0 md:shadow-none"
+        >
+          <div class="ml-auto mr-8 block md:hidden" id="menu-close-button">
             <img
-              class="navbar-toggle-icon | close-btn"
               src="./src/assets/img/SVG/icon-close.svg"
               alt=""
               aria-hidden="true"
             />
-          </div> -->
+          </div>
           <ul
-            class="flex items-center justify-between gap-5"
+            class="flex flex-col items-center justify-between gap-5 md:flex-row"
             aria-label="navigation list"
           >
-            <li class="nav-item">
+            <li>
               <a
                 href="#"
                 class="transition-colors duration-300 hover:text-red-50"
@@ -60,7 +62,7 @@
                 >Pricing</a
               >
             </li>
-            <li class="nav-item">
+            <li>
               <a
                 href="#"
                 class="transition-colors duration-300 hover:text-red-50"
@@ -68,7 +70,7 @@
                 >Product</a
               >
             </li>
-            <li class="nav-item">
+            <li>
               <a
                 href="#"
                 class="transition-colors duration-300 hover:text-red-50"
@@ -76,7 +78,7 @@
                 >About Us</a
               >
             </li>
-            <li class="nav-item">
+            <li>
               <a
                 href="#"
                 class="transition-colors duration-300 hover:text-red-50"
@@ -84,7 +86,7 @@
                 >Careers</a
               >
             </li>
-            <li class="nav-item">
+            <li>
               <a
                 href="#"
                 class="transition-colors duration-300 hover:text-red-50"
@@ -94,16 +96,18 @@
             </li>
           </ul>
           <!-- Button -->
-          <a href="#" class="btn bg-red-50 text-white" aria-label="get started"
+          <a
+            href="#"
+            class="btn blobk bg-red-50 text-white md:hidden lg:block"
+            aria-label="get started"
             >Get Started</a
           >
           <!-- /button -->
         </nav>
         <!-- hambergur menu -->
-        <div class="hidden">
+        <div class="h-6 w-6 cursor-pointer md:hidden" id="menu-open-button">
           <span class="visually-hidden">navigation menu</span>
           <img
-            class="navbar-toggle-icon open-btn"
             src="./src/assets/img/SVG/icon-hamburger.svg"
             alt=""
             aria-hidden="true"
@@ -118,7 +122,7 @@
           class="mb-8 flex flex-col-reverse gap-gutter-xl md:flex-row"
         >
           <article
-            class="flex w-full flex-col items-start justify-center gap-4 md:w-1/2 md:items-start"
+            class="flex w-full flex-col items-center justify-center gap-4 md:w-1/2 md:items-start"
           >
             <h1 class="text-center text-xxl font-bold md:text-left">
               Bring everyone together to build better products.
