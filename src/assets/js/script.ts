@@ -8,23 +8,25 @@ pointListItems.forEach((item, i) => {
   headingNum.innerText = `0${i + 1}`;
 });
 
-const backdrop = document.querySelector('.backdrop')!;
-const navbar = document.querySelector('.navbar')!;
-const navToggle = document.querySelector('.open-btn')!;
-const closeBtn = document.querySelector('.close-btn')!;
+const backdrop = document.getElementById("backdrop")!;
+const headerNavbar = document.getElementById('header-navbar')!
+const header = headerNavbar?.closest('header')!;
 
-navToggle.addEventListener('click', () => {
-  navbar.classList.toggle('active');
-  backdrop.classList.toggle('active');
-});
+header.addEventListener('click', (e)=>{
+   if(e.target!== null && (<HTMLElement>e.target).id !== 'menu-open-button' && (<HTMLElement>e.target).id !== 'menu-close-button') return;   
+
+   if((<HTMLElement>e.target).id ==='menu-open-button' ){
+    headerNavbar.classList.add('active');
+    backdrop.classList.add('active')
+   }
+   if((<HTMLElement>e.target).id ==='menu-close-button' ){
+    headerNavbar.classList.remove('active');
+    backdrop.classList.remove('active')
+   }
+})
 
 backdrop.addEventListener('click', () => {
-  navbar.classList.remove('active');
+  headerNavbar.classList.remove('active');
   backdrop.classList.remove('active');
 });
 
-closeBtn.addEventListener('click', () => {
-  navbar.classList.remove('active');
-  backdrop.classList.remove('active');
-});
-//# sourceMappingURL=script.js.map

@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="relative overflow-hidden bg-white text-blue-90">
-      <img
+      <!-- <img
         class="bg-pattern body-top"
         src="./src/assets/img/SVG/bg-tablet-pattern.svg"
         alt=""
@@ -26,7 +26,7 @@
         src="./src/assets/img/SVG/bg-tablet-pattern.svg"
         alt=""
         aria-hidden="true"
-      />
+      /> -->
       <div class="backdrop" id="backdrop"></div>
       <!-- Header -->
       <header
@@ -41,10 +41,11 @@
         <!-- Header Navbar -->
         <nav
           id="header-navbar"
-          class="absolute right-0 top-[4vw] z-[99] mx-auto flex origin-top-right scale-0 flex-col items-center justify-between gap-4 rounded-lg bg-gray-30 py-gutter-l shadow-lg transition-all delay-[250] ease-out md:relative md:top-0 md:mx-0 md:scale-100 md:flex-row md:bg-gray-30/0 md:p-0 md:shadow-none"
+          class="navbar | absolute right-0 top-[4vw] z-[99] mx-auto flex origin-top-right scale-0 flex-col items-center justify-between gap-4 rounded-lg bg-gray-30 py-gutter-l shadow-lg transition-all delay-[250] ease-out md:relative md:top-0 md:mx-0 md:scale-100 md:flex-row md:bg-gray-30/0 md:p-0 md:shadow-none"
         >
-          <div class="ml-auto mr-8 block md:hidden" id="menu-close-button">
+          <div class="ml-auto mr-8 block md:hidden">
             <img
+              id="menu-close-button"
               src="./src/assets/img/SVG/icon-close.svg"
               alt=""
               aria-hidden="true"
@@ -57,7 +58,7 @@
             <li>
               <a
                 href="#"
-                class="transition-colors duration-300 hover:text-red-50"
+                class="font-medium transition-colors duration-300 hover:text-red-50"
                 aria-label="pricing"
                 >Pricing</a
               >
@@ -65,7 +66,7 @@
             <li>
               <a
                 href="#"
-                class="transition-colors duration-300 hover:text-red-50"
+                class="font-medium transition-colors duration-300 hover:text-red-50"
                 aria-label="product"
                 >Product</a
               >
@@ -73,7 +74,7 @@
             <li>
               <a
                 href="#"
-                class="transition-colors duration-300 hover:text-red-50"
+                class="font-medium transition-colors duration-300 hover:text-red-50"
                 aria-label="about us"
                 >About Us</a
               >
@@ -81,7 +82,7 @@
             <li>
               <a
                 href="#"
-                class="transition-colors duration-300 hover:text-red-50"
+                class="font-medium transition-colors duration-300 hover:text-red-50"
                 aria-label="careers"
                 >Careers</a
               >
@@ -89,7 +90,7 @@
             <li>
               <a
                 href="#"
-                class="transition-colors duration-300 hover:text-red-50"
+                class="font-medium transition-colors duration-300 hover:text-red-50"
                 aria-label="community"
                 >Community</a
               >
@@ -105,9 +106,10 @@
           <!-- /button -->
         </nav>
         <!-- hambergur menu -->
-        <div class="h-6 w-6 cursor-pointer md:hidden" id="menu-open-button">
+        <div class="h-6 w-6 cursor-pointer md:hidden">
           <span class="visually-hidden">navigation menu</span>
           <img
+            id="menu-open-button"
             src="./src/assets/img/SVG/icon-hamburger.svg"
             alt=""
             aria-hidden="true"
@@ -378,7 +380,7 @@
               <li role="menuitem">
                 <a
                   href="#"
-                  class="transition-colors duration-300 hover:text-red-50"
+                  class="font-medium transition-colors duration-300 hover:text-red-50"
                   aria-label="home"
                   >Home</a
                 >
@@ -386,7 +388,7 @@
               <li role="menuitem">
                 <a
                   href="#"
-                  class="transition-colors duration-300 hover:text-red-50"
+                  class="font-medium transition-colors duration-300 hover:text-red-50"
                   aria-label="pricing"
                   >Pricing</a
                 >
@@ -394,7 +396,7 @@
               <li role="menuitem">
                 <a
                   href="#"
-                  class="transition-colors duration-300 hover:text-red-50"
+                  class="font-medium transition-colors duration-300 hover:text-red-50"
                   aria-label="products"
                   >Products</a
                 >
@@ -402,7 +404,7 @@
               <li role="menuitem">
                 <a
                   href="#"
-                  class="transition-colors duration-300 hover:text-red-50"
+                  class="font-medium transition-colors duration-300 hover:text-red-50"
                   aria-label="about us"
                   >About Us</a
                 >
@@ -410,7 +412,7 @@
               <li role="menuitem">
                 <a
                   href="#"
-                  class="transition-colors duration-300 hover:text-red-50"
+                  class="font-medium transition-colors duration-300 hover:text-red-50"
                   aria-label="careers"
                   >Careers</a
                 >
@@ -418,7 +420,7 @@
               <li role="menuitem">
                 <a
                   href="#"
-                  class="transition-colors duration-300 hover:text-red-50"
+                  class="font-medium transition-colors duration-300 hover:text-red-50"
                   aria-label="community"
                   >Community</a
                 >
@@ -426,7 +428,7 @@
               <li role="menuitem">
                 <a
                   href="#"
-                  class="transition-colors duration-300 hover:text-red-50"
+                  class="font-medium transition-colors duration-300 hover:text-red-50"
                   aria-label="privacy policy"
                   >Privacy Policy</a
                 >
