@@ -1,7 +1,7 @@
 "use strict"
 
 const pointListItems:NodeListOf<HTMLUListElement> = document
-  .querySelectorAll('.point-list-items');
+  .querySelectorAll('.point-list-item');
 
 pointListItems.forEach((item, i) => {
   const headingNum:HTMLSpanElement = item.querySelector('.item-num')!;
